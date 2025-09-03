@@ -2,13 +2,23 @@ import { TransactionCategory } from "@/models/category";
 import { TransactionType } from "@/models/type";
 
 export type Transaction = {
-  id: string; // identificador único (ex: UUID)
-  usuarioId?: string;
-  titulo: string; // nome curto (ex: "Salário", "Mercado")
-  descricao?: string; // detalhamento opcional
-  valor: number; // valor numérico positivo
-  tipo: TransactionType;
-  categoria: TransactionCategory;
-  dataCriacao: Date; // quando foi criada
-  dataAtualizacao: Date; // última modificação
+  id: string; // unique identifier (e.g., UUID)
+  userId?: string;
+  title: string; // short name (e.g., "Salary", "Groceries")
+  description?: string; // optional detailed description
+  amount: number; // positive numeric value
+  type: TransactionType; // "income" or "expense"
+  category: TransactionCategory; // transaction category
+  pending: boolean;
+  createdAt: Date; // when it was created
+  updatedAt: Date; // last modification
 };
+
+// export type CreateTransactionDTO = Omit<
+//   Transaction,
+//   "id" | "createdAt" | "updatedAt"
+// >;
+
+// export type UpdateTransactionDTO = Partial<CreateTransactionDTO> & {
+//   id: string;
+// };
