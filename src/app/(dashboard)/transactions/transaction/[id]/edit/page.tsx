@@ -7,7 +7,7 @@ const TransactionPage = async ({ params }: TransactionPageProps) => {
 
   return (
     <>
-      <h1>Página de visualização da Transação específicada pelo ID: {id}</h1>
+      <h1>Página de edição da Transação específicada pelo ID: {id}</h1>
     </>
   );
 };
