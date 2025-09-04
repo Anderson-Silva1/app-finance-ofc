@@ -1,7 +1,10 @@
 const TransactionsPage = () => {
   return (
     <>
-      <h1>TransactionsPage</h1>
+      <h1>
+        Página de todas as Transações separadas por categoria a pedido do
+        usuário
+      </h1>
     </>
   );
 };
