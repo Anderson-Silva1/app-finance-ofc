@@ -1,7 +1,9 @@
+import Header from "@/components/header";
+
 const AdminPage = () => {
   return (
     <>
-      <h1>Pagina Admin</h1>
+      <Header title="Painel Admin" />
     </>
   );
 };

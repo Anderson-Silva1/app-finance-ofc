@@ -1,4 +1,4 @@
-import SidebarDashboard from "@/components/sidebar-dashboard";
+import SidebarAdmin from "@/components/sidebar-admin";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 export default function RootLayout({
@@ -8,9 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      {/* <header className="h-90 w-full bg-green-500">t</header> */}
+      {/* <header className="h-90 w-full bg-red-500">t</header> */}
       <SidebarProvider>
-        <SidebarDashboard />
+        <SidebarAdmin />
         <main className="h-full w-full">
           <SidebarTrigger className="fixed m-4" />
           {children}

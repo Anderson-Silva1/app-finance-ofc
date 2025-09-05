@@ -1,7 +1,9 @@
+import Header from "@/components/header";
+
 const DashboardPage = () => {
   return (
     <>
-      <h1 className="text-7xl">Página Dashboard ou INÍCIO</h1>
+      <Header title="Dashboard" />
     </>
   );
 };
