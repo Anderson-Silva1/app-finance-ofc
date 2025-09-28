@@ -9,8 +9,9 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "./ui/sidebar";
-import { Separator } from "./ui/separator";
+} from "../ui/sidebar";
+import { Separator } from "../ui/separator";
+import { ModeToggle } from "./mode-toggle";
 
 // Menu items.
 const items = [
@@ -24,8 +25,11 @@ const items = [
 const SidebarAdmin = () => {
   return (
     <Sidebar>
-      <SidebarHeader>
-        <div className="h-16 w-16 bg-blue-500">logo</div>
+      <SidebarHeader className="flex">
+        <div className="flex items-center justify-between">
+          <div className="h-16 w-16 bg-blue-500">logo</div>
+          <ModeToggle />
+        </div>
       </SidebarHeader>
       <Separator />
       <SidebarContent>

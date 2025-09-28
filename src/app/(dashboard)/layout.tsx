@@ -1,4 +1,4 @@
-import SidebarDashboard from "@/components/sidebar-dashboard";
+import SidebarDashboard from "@/components/template/sidebar-dashboard";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 export default function RootLayout({

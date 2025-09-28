@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Header from "@/components/template/header";
 import { Button } from "@/components/ui/button";
 import {
   Card,

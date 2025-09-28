@@ -1,9 +1,9 @@
-const NewTransactionPage = () => {
-  return (
-    <>
-      <h1>Página de Criação da Transação</h1>
-    </>
-  );
-};
+import NewTransaction from "@/components/new-transaction";
 
-export default NewTransactionPage;
+export default function NewTransactionPage() {
+  return (
+    <div>
+      <NewTransaction />
+    </div>
+  );
+}

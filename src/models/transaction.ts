@@ -10,8 +10,8 @@ export type Transaction = {
   type: TransactionType; // "income" or "expense"
   category: TransactionCategory; // transaction category
   pending: boolean;
-  createdAt: Date; // when it was created
-  updatedAt: Date; // last modification
+  createdAt: string; // when it was created
+  updatedAt: string; // last modification
 };
 
 // export type CreateTransactionDTO = Omit<

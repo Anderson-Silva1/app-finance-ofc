@@ -1,4 +1,4 @@
-import SidebarAdmin from "@/components/sidebar-admin";
+import SidebarAdmin from "@/components/template/sidebar-admin";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 export default function RootLayout({
